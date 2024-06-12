@@ -1,0 +1,612 @@
+2024-06-11 16:34:32,105 INFO    StreamThr :63650 [internal.py:wandb_internal():85] W&B internal server running at pid: 63650, started at: 2024-06-11 16:34:32.102080
+2024-06-11 16:34:32,109 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status
+2024-06-11 16:34:32,118 INFO    WriterThread:63650 [datastore.py:open_for_write():87] open: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/run-ofbmy6t0.wandb
+2024-06-11 16:34:32,120 DEBUG   SenderThread:63650 [sender.py:send():379] send: header
+2024-06-11 16:34:32,185 DEBUG   SenderThread:63650 [sender.py:send():379] send: run
+2024-06-11 16:34:32,900 INFO    SenderThread:63650 [dir_watcher.py:__init__():211] watching files in: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files
+2024-06-11 16:34:32,900 INFO    SenderThread:63650 [sender.py:_start_run_threads():1188] run started: ofbmy6t0 with start time 1718091272.098167
+2024-06-11 16:34:32,906 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: check_version
+2024-06-11 16:34:32,906 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: check_version
+2024-06-11 16:34:32,965 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: run_start
+2024-06-11 16:34:32,966 DEBUG   HandlerThread:63650 [system_info.py:__init__():26] System info init
+2024-06-11 16:34:32,966 DEBUG   HandlerThread:63650 [system_info.py:__init__():41] System info init done
+2024-06-11 16:34:32,966 INFO    HandlerThread:63650 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 16:34:32,966 INFO    SystemMonitor:63650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 16:34:32,966 INFO    HandlerThread:63650 [system_monitor.py:probe():214] Collecting system info
+2024-06-11 16:34:32,970 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started cpu monitoring
+2024-06-11 16:34:32,972 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started disk monitoring
+2024-06-11 16:34:32,974 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-11 16:34:32,976 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started memory monitoring
+2024-06-11 16:34:32,977 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started network monitoring
+2024-06-11 16:34:34,028 DEBUG   HandlerThread:63650 [system_info.py:probe():152] Probing system
+2024-06-11 16:34:34,033 DEBUG   HandlerThread:63650 [system_info.py:_probe_git():137] Probing git
+2024-06-11 16:34:34,061 DEBUG   HandlerThread:63650 [system_info.py:_probe_git():145] Probing git done
+2024-06-11 16:34:34,062 DEBUG   HandlerThread:63650 [system_info.py:probe():200] Probing system done
+2024-06-11 16:34:34,062 DEBUG   HandlerThread:63650 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.8.16', 'heartbeatAt': '2024-06-11T07:34:34.028821', 'startedAt': '2024-06-11T07:34:32.082114', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'Study/Node/visualizing_ml_trials.ipynb', 'codePathLocal': None, 'root': '/Users/seongyeon/Desktop/AI/AIFFEL', 'git': {'remote': 'https://github.com/seongyeon1/aiffel.git', 'commit': 'c596d6f1cdb36c1693f7cb8edc90d92246e86c36'}, 'email': 'ksy974498@gmail.com', 'host': 'gimseong-yeons-MacBook-Pro-2.local', 'username': 'seongyeon', 'executable': '/opt/homebrew/Caskroom/miniforge/base/envs/DL-tf/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3504, 'min': 600, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 600, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 341.53461837768555}}, 'gpuapple': {'type': 'Apple M2', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 24.0}}
+2024-06-11 16:34:34,062 INFO    HandlerThread:63650 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-11 16:34:34,062 INFO    HandlerThread:63650 [system_monitor.py:probe():227] Publishing system info
+2024-06-11 16:34:34,062 DEBUG   HandlerThread:63650 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-06-11 16:34:34,911 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/conda-environment.yaml
+2024-06-11 16:34:40,407 DEBUG   HandlerThread:63650 [system_info.py:_save_conda():224] Saving conda packages done
+2024-06-11 16:34:40,408 INFO    HandlerThread:63650 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-11 16:34:40,419 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-11 16:34:40,419 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:34:40,419 DEBUG   SenderThread:63650 [sender.py:send():379] send: files
+2024-06-11 16:34:40,419 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-11 16:34:40,640 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-11 16:34:40,640 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:40,640 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:34:40,640 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: python_packages
+2024-06-11 16:34:40,641 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:34:40,645 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: pause
+2024-06-11 16:34:40,645 INFO    HandlerThread:63650 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-11 16:34:40,645 INFO    HandlerThread:63650 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 16:34:40,646 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 16:34:40,646 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-11 16:34:40,646 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 16:34:40,646 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined disk monitor
+2024-06-11 16:34:40,647 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 16:34:40,647 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-11 16:34:40,647 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined memory monitor
+2024-06-11 16:34:40,647 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined network monitor
+2024-06-11 16:34:40,649 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: resume
+2024-06-11 16:34:40,650 INFO    HandlerThread:63650 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-11 16:34:40,650 INFO    HandlerThread:63650 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 16:34:40,650 INFO    SystemMonitor:63650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 16:34:40,650 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started cpu monitoring
+2024-06-11 16:34:40,651 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started disk monitoring
+2024-06-11 16:34:40,652 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-11 16:34:40,655 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started memory monitoring
+2024-06-11 16:34:40,656 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started network monitoring
+2024-06-11 16:34:40,662 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: pause
+2024-06-11 16:34:40,662 INFO    HandlerThread:63650 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-11 16:34:40,662 INFO    HandlerThread:63650 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 16:34:40,662 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 16:34:40,662 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 16:34:40,662 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-11 16:34:40,662 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 16:34:40,662 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined disk monitor
+2024-06-11 16:34:40,936 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/conda-environment.yaml
+2024-06-11 16:34:40,936 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/requirements.txt
+2024-06-11 16:34:40,936 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-metadata.json
+2024-06-11 16:34:40,946 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-11 16:34:40,946 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined memory monitor
+2024-06-11 16:34:40,946 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined network monitor
+2024-06-11 16:34:41,036 DEBUG   SenderThread:63650 [sender.py:send():379] send: telemetry
+2024-06-11 16:34:41,036 DEBUG   SenderThread:63650 [sender.py:send():379] send: telemetry
+2024-06-11 16:34:41,036 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:34:41,037 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:34:41,278 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: resume
+2024-06-11 16:34:41,278 INFO    HandlerThread:63650 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-11 16:34:41,278 INFO    HandlerThread:63650 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 16:34:41,279 INFO    SystemMonitor:63650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 16:34:41,279 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started cpu monitoring
+2024-06-11 16:34:41,280 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started disk monitoring
+2024-06-11 16:34:41,281 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-11 16:34:41,290 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started memory monitoring
+2024-06-11 16:34:41,292 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started network monitoring
+2024-06-11 16:34:41,313 INFO    wandb-upload_0:63650 [upload_job.py:push():130] Uploaded file /var/folders/1b/dx8_94fs0q740wx3lfknk6y40000gn/T/tmplrpvnz0lwandb/q5kmxnhx-wandb-metadata.json
+2024-06-11 16:34:41,351 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: pause
+2024-06-11 16:34:41,351 INFO    HandlerThread:63650 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-11 16:34:41,351 INFO    HandlerThread:63650 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 16:34:41,351 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-11 16:34:41,356 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 16:34:41,356 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 16:34:41,356 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 16:34:41,358 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined disk monitor
+2024-06-11 16:34:41,708 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-11 16:34:41,710 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined memory monitor
+2024-06-11 16:34:41,710 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined network monitor
+2024-06-11 16:34:41,711 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:41,714 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:34:41,940 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:42,645 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:42,673 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: resume
+2024-06-11 16:34:42,674 INFO    HandlerThread:63650 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-11 16:34:42,674 INFO    HandlerThread:63650 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 16:34:42,674 INFO    SystemMonitor:63650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 16:34:42,674 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started cpu monitoring
+2024-06-11 16:34:42,675 DEBUG   SenderThread:63650 [sender.py:send():379] send: telemetry
+2024-06-11 16:34:42,675 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started disk monitoring
+2024-06-11 16:34:42,676 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:34:42,677 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-11 16:34:42,680 DEBUG   SenderThread:63650 [sender.py:send():379] send: telemetry
+2024-06-11 16:34:42,681 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:34:42,681 WARNING SenderThread:63650 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-06-11 16:34:42,681 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started memory monitoring
+2024-06-11 16:34:42,682 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started network monitoring
+2024-06-11 16:34:43,079 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:34:43,647 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:43,950 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:44,650 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:45,654 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:45,957 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:46,659 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:47,662 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:47,962 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:48,136 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:34:48,663 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:49,667 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:49,969 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:50,668 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:51,669 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:51,970 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:52,674 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:53,147 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:34:53,676 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:53,980 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:54,681 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:55,644 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:34:55,644 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:34:55,685 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:55,982 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:56,691 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:57,692 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:57,986 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:34:58,695 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:58,828 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:34:59,696 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:34:59,998 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:00,310 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:35:00,315 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:35:00,315 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:35:00,316 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:35:00,316 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:35:00,316 DEBUG   SenderThread:63650 [sender.py:send():379] send: metric
+2024-06-11 16:35:00,316 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:35:00,316 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:35:00,317 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:35:00,697 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:01,003 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:35:01,701 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:02,004 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:02,703 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:03,707 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:03,882 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:04,008 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:04,710 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:05,014 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/config.yaml
+2024-06-11 16:35:05,714 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:06,018 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:06,717 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:07,719 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:08,022 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:08,729 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:09,727 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:09,855 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:10,028 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:10,647 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:35:10,647 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:35:10,729 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:11,734 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:12,032 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:12,736 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:13,738 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:14,042 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:14,743 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:14,880 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:15,744 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:16,051 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:16,582 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:35:16,583 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:35:16,584 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:35:16,584 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:35:16,748 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:17,056 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:35:17,752 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:18,058 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:18,752 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:19,752 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:19,885 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:20,069 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:20,756 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:21,760 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:22,076 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:22,761 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:23,763 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:24,081 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:24,765 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:24,907 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:25,647 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:35:25,648 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:35:25,770 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:26,088 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:26,772 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:27,776 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:28,182 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:28,778 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:29,184 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:29,782 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:30,415 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:30,782 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:31,188 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:31,218 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:35:31,219 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:35:31,219 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:35:31,220 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:35:31,785 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:32,192 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:35:32,788 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:33,195 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:33,789 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:34,789 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:35,199 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:35,446 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:35,793 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:36,795 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:37,208 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:37,799 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:38,803 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:39,213 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:39,805 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:40,471 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:40,650 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:35:40,650 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:35:40,805 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:41,218 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:41,805 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:42,682 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 16:35:42,683 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:35:42,809 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:43,223 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:43,813 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:44,817 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:45,217 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:35:45,219 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:35:45,219 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:35:45,219 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:35:45,229 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:45,229 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:35:45,491 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:45,820 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:46,826 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:47,230 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:47,826 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:48,827 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:49,235 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:49,833 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:50,536 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:50,835 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:51,238 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:51,838 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:52,842 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:53,243 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:53,847 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:54,849 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:55,247 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:55,565 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:35:55,654 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:35:55,654 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:35:55,849 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:56,850 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:57,253 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:57,851 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:58,852 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:35:59,255 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:35:59,401 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:35:59,402 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:35:59,402 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:35:59,402 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:35:59,852 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:00,257 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:36:00,605 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:00,853 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:01,260 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:01,854 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:02,856 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:03,268 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:03,860 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:04,860 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:05,274 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:05,638 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:05,864 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:06,868 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:07,281 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:07,870 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:08,875 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:09,285 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:09,878 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:10,642 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:10,660 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:36:10,660 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:36:10,881 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:11,292 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:11,881 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:12,686 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:36:12,885 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:13,298 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:13,886 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:14,275 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:36:14,277 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:36:14,277 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:36:14,277 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:36:14,298 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:36:14,890 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:15,303 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:15,649 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:15,893 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:16,894 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:17,311 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:17,900 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:18,904 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:19,313 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:19,907 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:20,659 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:20,912 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:21,316 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:21,915 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:22,918 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:23,321 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:23,919 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:24,920 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:25,335 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:25,660 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:36:25,660 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:36:25,890 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:25,922 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:26,926 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:27,342 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:27,931 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:28,934 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:29,349 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:29,475 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:36:29,477 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:36:29,477 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:36:29,477 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:36:29,938 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:30,352 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:36:30,892 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:30,938 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:31,353 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:31,941 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:32,944 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:33,361 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:33,946 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:34,946 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:35,368 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:35,931 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:35,949 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:36,952 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:37,374 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:37,955 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:38,958 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:39,379 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:39,960 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:40,660 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:36:40,660 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:36:40,941 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:40,965 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:41,385 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:41,969 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:42,689 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:36:42,974 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:43,390 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:43,977 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:44,113 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:36:44,115 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:36:44,115 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:36:44,115 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:36:44,395 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:36:44,979 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:45,398 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:45,951 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:45,982 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:46,983 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:47,401 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:47,984 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:48,985 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:49,404 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:49,989 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:50,994 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:50,995 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:51,411 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:51,994 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:52,995 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:53,417 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:53,997 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:54,998 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:55,422 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:55,661 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:36:55,661 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:36:55,999 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:56,032 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:36:57,001 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:57,427 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:36:58,004 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:58,051 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:36:58,052 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:36:58,052 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:36:58,053 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:36:58,430 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:36:59,007 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:36:59,431 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:00,010 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:01,011 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:01,034 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:37:01,435 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:02,014 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:03,063 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:03,441 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:04,024 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:05,029 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:05,449 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:06,030 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:06,039 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:37:07,034 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:07,454 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:08,037 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:09,037 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:09,460 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:10,038 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:10,664 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-11 16:37:10,664 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: stop_status
+2024-06-11 16:37:11,042 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:11,464 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:11,977 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:37:12,042 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:12,469 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-11 16:37:12,470 DEBUG   SenderThread:63650 [sender.py:send():379] send: history
+2024-06-11 16:37:12,471 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: summary_record
+2024-06-11 16:37:12,475 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:37:12,476 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: pause
+2024-06-11 16:37:12,477 INFO    HandlerThread:63650 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-11 16:37:12,477 INFO    HandlerThread:63650 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 16:37:12,477 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-11 16:37:12,477 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 16:37:12,478 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined disk monitor
+2024-06-11 16:37:12,478 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 16:37:12,478 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-11 16:37:12,478 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined memory monitor
+2024-06-11 16:37:12,478 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined network monitor
+2024-06-11 16:37:12,479 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:37:12,481 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: resume
+2024-06-11 16:37:12,481 INFO    HandlerThread:63650 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-11 16:37:12,481 INFO    HandlerThread:63650 [system_monitor.py:start():194] Starting system monitor
+2024-06-11 16:37:12,481 INFO    SystemMonitor:63650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-11 16:37:12,483 DEBUG   SenderThread:63650 [sender.py:send():379] send: telemetry
+2024-06-11 16:37:12,483 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started cpu monitoring
+2024-06-11 16:37:12,483 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started disk monitoring
+2024-06-11 16:37:12,489 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: server_info
+2024-06-11 16:37:12,490 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-11 16:37:12,490 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: server_info
+2024-06-11 16:37:12,492 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started memory monitoring
+2024-06-11 16:37:12,492 INFO    SystemMonitor:63650 [interfaces.py:start():188] Started network monitoring
+2024-06-11 16:37:12,686 DEBUG   SenderThread:63650 [sender.py:send():379] send: exit
+2024-06-11 16:37:12,686 INFO    SenderThread:63650 [sender.py:send_exit():586] handling exit code: 0
+2024-06-11 16:37:12,686 INFO    SenderThread:63650 [sender.py:send_exit():588] handling runtime: 158
+2024-06-11 16:37:12,687 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:37:12,688 INFO    SenderThread:63650 [sender.py:send_exit():594] send defer
+2024-06-11 16:37:12,688 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,688 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-11 16:37:12,688 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,688 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-11 16:37:12,688 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 1
+2024-06-11 16:37:12,688 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,688 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-11 16:37:12,688 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,688 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-11 16:37:12,688 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 2
+2024-06-11 16:37:12,688 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,688 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-11 16:37:12,688 INFO    HandlerThread:63650 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-11 16:37:12,689 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-11 16:37:12,689 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined disk monitor
+2024-06-11 16:37:12,689 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-11 16:37:12,689 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-11 16:37:12,689 DEBUG   SystemMonitor:63650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-11 16:37:12,840 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-11 16:37:12,840 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined memory monitor
+2024-06-11 16:37:12,840 INFO    HandlerThread:63650 [interfaces.py:finish():200] Joined network monitor
+2024-06-11 16:37:12,841 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,841 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-11 16:37:12,841 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 3
+2024-06-11 16:37:12,841 DEBUG   SenderThread:63650 [sender.py:send():379] send: stats
+2024-06-11 16:37:12,841 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,841 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-11 16:37:12,841 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,841 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-11 16:37:12,842 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 4
+2024-06-11 16:37:12,842 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,842 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-11 16:37:12,842 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,842 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-11 16:37:12,842 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 5
+2024-06-11 16:37:12,842 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,842 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-11 16:37:12,842 DEBUG   SenderThread:63650 [sender.py:send():379] send: summary
+2024-06-11 16:37:12,843 INFO    SenderThread:63650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-11 16:37:12,843 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,843 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-11 16:37:12,843 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 6
+2024-06-11 16:37:12,843 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:12,843 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-11 16:37:12,843 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:12,843 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-11 16:37:12,847 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: status_report
+2024-06-11 16:37:13,054 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 7
+2024-06-11 16:37:13,054 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:13,054 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-11 16:37:13,055 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:13,055 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-11 16:37:13,409 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 8
+2024-06-11 16:37:13,409 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:13,409 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-11 16:37:13,409 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:13,409 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-11 16:37:13,409 INFO    SenderThread:63650 [job_builder.py:build():440] Attempting to build job artifact
+2024-06-11 16:37:13,410 INFO    SenderThread:63650 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-06-11 16:37:13,410 INFO    SenderThread:63650 [job_builder.py:_get_program_relpath():587] run is notebook based run
+2024-06-11 16:37:13,466 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:13,466 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:37:13,467 INFO    Thread-12 :63650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/config.yaml
+2024-06-11 16:37:13,467 INFO    SenderThread:63650 [job_builder.py:build():545] adding wandb-job metadata file
+2024-06-11 16:37:13,470 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 9
+2024-06-11 16:37:13,470 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:13,470 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-11 16:37:13,470 DEBUG   SenderThread:63650 [sender.py:send():379] send: artifact
+2024-06-11 16:37:13,689 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-11 16:37:14,964 INFO    wandb-upload_0:63650 [upload_job.py:push():88] Uploaded file /var/folders/1b/dx8_94fs0q740wx3lfknk6y40000gn/T/tmpfl013m7i/wandb-job.json
+2024-06-11 16:37:15,041 INFO    wandb-upload_1:63650 [upload_job.py:push():88] Uploaded file /Users/seongyeon/Library/Application Support/wandb/artifacts/staging/tmp3eyermw7
+2024-06-11 16:37:16,266 INFO    SenderThread:63650 [sender.py:send_artifact():1530] sent artifact job-https___github.com_seongyeon1_aiffel.git_Study_Node_visualizing_ml_trials.ipynb - {'id': 'QXJ0aWZhY3Q6ODY3NDA1OTUw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE4NDU4Nzg0Mw==', 'latestArtifact': None}}
+2024-06-11 16:37:16,266 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:16,266 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-11 16:37:16,266 INFO    SenderThread:63650 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-11 16:37:16,481 INFO    SenderThread:63650 [dir_watcher.py:finish():388] scan: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files
+2024-06-11 16:37:16,481 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/requirements.txt requirements.txt
+2024-06-11 16:37:16,482 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log output.log
+2024-06-11 16:37:16,482 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/config.yaml config.yaml
+2024-06-11 16:37:16,487 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json wandb-summary.json
+2024-06-11 16:37:16,488 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/conda-environment.yaml conda-environment.yaml
+2024-06-11 16:37:16,488 INFO    SenderThread:63650 [dir_watcher.py:finish():402] scan save: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-metadata.json wandb-metadata.json
+2024-06-11 16:37:16,488 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 10
+2024-06-11 16:37:16,491 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 16:37:16,494 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:16,497 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-11 16:37:16,498 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:16,499 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-11 16:37:16,499 INFO    SenderThread:63650 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-11 16:37:16,698 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-11 16:37:16,699 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 16:37:16,974 INFO    wandb-upload_1:63650 [upload_job.py:push():130] Uploaded file /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/output.log
+2024-06-11 16:37:16,983 INFO    wandb-upload_0:63650 [upload_job.py:push():130] Uploaded file /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/requirements.txt
+2024-06-11 16:37:17,063 INFO    wandb-upload_3:63650 [upload_job.py:push():130] Uploaded file /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/wandb-summary.json
+2024-06-11 16:37:17,063 INFO    wandb-upload_2:63650 [upload_job.py:push():130] Uploaded file /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/config.yaml
+2024-06-11 16:37:17,073 INFO    wandb-upload_4:63650 [upload_job.py:push():130] Uploaded file /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/files/conda-environment.yaml
+2024-06-11 16:37:17,278 INFO    Thread-11 :63650 [sender.py:transition_state():614] send defer: 11
+2024-06-11 16:37:17,278 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:17,279 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-11 16:37:17,279 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:17,279 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-11 16:37:17,279 INFO    SenderThread:63650 [file_pusher.py:join():175] waiting for file pusher
+2024-06-11 16:37:17,280 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 12
+2024-06-11 16:37:17,280 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:17,280 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-11 16:37:17,280 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:17,280 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-11 16:37:17,280 INFO    SenderThread:63650 [file_stream.py:finish():601] file stream finish called
+2024-06-11 16:37:17,705 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-11 16:37:17,916 INFO    SenderThread:63650 [file_stream.py:finish():605] file stream finish is done
+2024-06-11 16:37:17,916 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 13
+2024-06-11 16:37:17,917 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 16:37:17,918 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:17,918 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-11 16:37:17,919 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:17,919 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-11 16:37:17,919 INFO    SenderThread:63650 [sender.py:transition_state():614] send defer: 14
+2024-06-11 16:37:17,920 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: defer
+2024-06-11 16:37:17,920 INFO    HandlerThread:63650 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-11 16:37:17,920 DEBUG   SenderThread:63650 [sender.py:send():379] send: final
+2024-06-11 16:37:17,921 DEBUG   SenderThread:63650 [sender.py:send():379] send: footer
+2024-06-11 16:37:17,921 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: defer
+2024-06-11 16:37:17,921 INFO    SenderThread:63650 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-11 16:37:17,923 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-11 16:37:17,923 DEBUG   SenderThread:63650 [sender.py:send_request():406] send_request: poll_exit
+2024-06-11 16:37:17,927 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-11 16:37:17,930 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-11 16:37:17,931 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-11 16:37:17,933 DEBUG   HandlerThread:63650 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-11 16:37:17,933 INFO    HandlerThread:63650 [handler.py:finish():882] shutting down handler
+2024-06-11 16:37:18,925 INFO    SenderThread:63650 [sender.py:finish():1608] shutting down sender
+2024-06-11 16:37:18,925 INFO    SenderThread:63650 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-11 16:37:18,925 INFO    SenderThread:63650 [file_pusher.py:join():175] waiting for file pusher
+2024-06-11 16:37:18,927 INFO    WriterThread:63650 [datastore.py:close():296] close: /Users/seongyeon/Desktop/AI/AIFFEL/Study/Node/wandb/run-20240611_163432-ofbmy6t0/run-ofbmy6t0.wandb
