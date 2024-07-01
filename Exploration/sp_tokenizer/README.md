@@ -49,7 +49,8 @@
     - [O]  느낀 점
     - [O]  어려웠던 점
  
-    - ![Uploading image.png…]()
+    - ![image](https://github.com/seongyeon1/aiffel/assets/58682424/b43362c3-de7a-4c9a-9404-b65a09b3c2b2)
+
 
 
 ## 리뷰
