@@ -31,7 +31,6 @@
     - [O]  모든 실험 결과가 기록되었나요?
     - ![image](https://github.com/seongyeon1/aiffel/assets/58682424/1fffa5cb-7354-4163-9e8e-79f610a0e6b0)
     - ![image](https://github.com/seongyeon1/aiffel/assets/58682424/09d4bc19-f48e-4b56-bab5-96270f04a9f8)
-    - ![image](https://github.com/seongyeon1/aiffel/assets/58682424/6594a41e-9ef4-45b8-be46-a7e6e4901512)
 
 
 - [O]  **4. 프로젝트에 대한 회고가 상세히 기록 되어 있나요? (회고, 정리)**
