@@ -31,8 +31,8 @@
 
 - [o]  **3. 체크리스트에 해당하는 항목들을 모두 수행하였나요? (문제 해결)**
 
-        ![image](https://github.com/user-attachments/assets/e44ced76-bd6b-4c80-9fee-f227975b2ff2)
-        - 결과를 하나하나 다 찍어보고 문제를 해결하려는 노력이 잘 보였습니다.
+![image](https://github.com/user-attachments/assets/e44ced76-bd6b-4c80-9fee-f227975b2ff2)
+- 결과를 하나하나 다 찍어보고 문제를 해결하려는 노력이 잘 보였습니다.
        
 
 - [O]  **4. 프로젝트에 대한 회고가 상세히 기록 되어 있나요? (회고, 정리)**
