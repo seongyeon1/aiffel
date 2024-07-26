@@ -11,7 +11,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - .:/code
+      - type: bind
+        source: .
+        target: /code
     depends_on:
       - redis
 
