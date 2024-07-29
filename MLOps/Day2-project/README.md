@@ -73,5 +73,5 @@ $ make server-clean
 
 ### DB 연결 -> query로 db 확인
 ```bash
-$ docker exec -it data-generator /bin/bash
+$ make db-connection
 ```
