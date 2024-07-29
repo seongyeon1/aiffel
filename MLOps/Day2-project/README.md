@@ -42,25 +42,25 @@
     $ make db-connection
     mydatabase=# select * from iris_data;
     ```
-   - Data Generator server 에서 확인
-     - docker makefile 따로 만들어서 make db-connection으로도 가능하게 수정완료
-   ```bash
-    $ make go-container
-    docker exec -it data-generator /bin/bash
-    root@1b5a33743630:/usr/app# make db-connection
-    PGPASSWORD=mypassword psql -h postgres-server -p 5432 -U myuser -d mydatabase
+- Data Generator server 에서 확인
+  - docker makefile 따로 만들어서 make db-connection으로도 가능하게 수정완료
+  ```bash
+   $ make go-container
+   docker exec -it data-generator /bin/bash
+   root@1b5a33743630:/usr/app# make db-connection
+   PGPASSWORD=mypassword psql -h postgres-server -p 5432 -U myuser -d mydatabase
   
-    mydatabase=# select * from iris_data;
-    id |         timestamp          | sepal_length | sepal_width | petal_length | petal_width | target 
-    ----+----------------------------+--------------+-------------+--------------+-------------+--------
-      1 | 2024-07-29 07:35:03.546737 |          6.4 |         2.8 |          5.6 |         2.1 |      2
-      2 | 2024-07-29 07:35:04.555192 |            5 |         3.2 |          1.2 |         0.2 |      0
-      3 | 2024-07-29 07:35:05.560515 |          5.8 |         2.7 |          5.1 |         1.9 |      2
-      4 | 2024-07-29 07:35:06.568681 |            6 |         2.7 |          5.1 |         1.6 |      1
-      5 | 2024-07-29 07:35:07.573374 |          6.2 |         2.9 |          4.3 |         1.3 |      1
-      6 | 2024-07-29 07:35:08.579074 |          7.4 |         2.8 |          6.1 |         1.9 |      2
-      7 | 2024-07-29 07:35:09.589246 |          5.6 |         2.9 |          3.6 |         1.3 |      1
-    ```
+   mydatabase=# select * from iris_data;
+   id |         timestamp          | sepal_length | sepal_width | petal_length | petal_width | target 
+   ----+----------------------------+--------------+-------------+--------------+-------------+--------
+     1 | 2024-07-29 07:35:03.546737 |          6.4 |         2.8 |          5.6 |         2.1 |      2
+     2 | 2024-07-29 07:35:04.555192 |            5 |         3.2 |          1.2 |         0.2 |      0
+     3 | 2024-07-29 07:35:05.560515 |          5.8 |         2.7 |          5.1 |         1.9 |      2
+     4 | 2024-07-29 07:35:06.568681 |            6 |         2.7 |          5.1 |         1.6 |      1
+     5 | 2024-07-29 07:35:07.573374 |          6.2 |         2.9 |          4.3 |         1.3 |      1
+     6 | 2024-07-29 07:35:08.579074 |          7.4 |         2.8 |          6.1 |         1.9 |      2
+     7 | 2024-07-29 07:35:09.589246 |          5.6 |         2.9 |          3.6 |         1.3 |      1
+   ```
   
 <br>
 
