@@ -7,7 +7,7 @@
 
 
 ## 스펙 명세서
-1. Docker Compose 파일을 작성.
+### 1. Docker Compose 파일을 작성.
    - Postgres Server
      - Service name : postgres-server 
      - Image : postgres:14.0 
@@ -32,8 +32,8 @@
 > - postgres server 가 사용 가능한 상태가 되어있는지 체크를 한 뒤에 Data Generator 를 띄워야 한다.
 > - 이를 해결하기 위한 방법으로 [Docker Compose Healthcheck](https://github.com/peter-evans/docker-compose-healthcheck) 를 사용한다.
 
-2. Docker Compose 파일 실행
-3. psql 을 이용하여 DB 에 데이터가 계속해서 쌓이고 있는지 확인
+### 2. Docker Compose 파일 실행
+### 3. psql 을 이용하여 DB 에 데이터가 계속해서 쌓이고 있는지 확인
    - Local 에서 확인
     ```bash
     $ make db-connection
