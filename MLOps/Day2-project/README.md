@@ -25,8 +25,9 @@
      - Command : ["postgres-server"]
 
       
-> Postgres Server 서비스와 Data Generator 서비스를 띄울 때 어떤 서비스가 먼저 생성되어야 하는지 생각해보고, 그 기능을 Compose 파일에 추가합니다.
-> depends_on 으로 서비스 간의 종속성은 정했지만, 
+> - Postgres Server 서비스와 Data Generator 서비스를 띄울 때 어떤 서비스가 먼저 
+> 생성되어야 하는지 생각해보고, 그 기능을 Compose 파일에 추가.
+> - depends_on 으로 서비스 간의 종속성은 정했지만, 
 > 실제로 postgres server 가 띄워진 뒤에 곧바로 Data Generator 가 띄워지게 되면 Postgres server 는 아직 준비가 되어있지 않은데 Data Generator 가 띄워져서 DB 에 연결을 하려다보니 Data Generator 가 Exited 되는 문제가 발생한다.
 > - postgres server 가 사용 가능한 상태가 되어있는지 체크를 한 뒤에 Data Generator 를 띄워야 한다.
 > - 이를 해결하기 위한 방법으로 [Docker Compose Healthcheck](https://github.com/peter-evans/docker-compose-healthcheck) 를 사용한다.
