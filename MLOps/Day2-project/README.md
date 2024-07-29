@@ -9,20 +9,20 @@
 ## 스펙 명세서
 ### 1. Docker Compose 파일을 작성.
    - Postgres Server
-     - Service name : postgres-server 
-     - Image : postgres:14.0 
-     - Container name : postgres-server 
+     - Service name : `postgres-server` 
+     - Image : `postgres:14.0`
+     - Container name : `postgres-server` 
      - Environment 
-       - POSTGRES_USER : myuser
-       - POSTGRES_PASSWORD : mypassword
-       - POSTGRES_DB : mydatabase
-     - Port forwarding : 5432:5432
+       - POSTGRES_USER : `myuser`
+       - POSTGRES_PASSWORD : `mypassword`
+       - POSTGRES_DB : `mydatabase`
+     - Port forwarding : `5432:5432`
 
    - Data Generator
-     - Service name : data-generator
-     - Image : Dockerfile
-     - Container name : data-generator
-     - Command : ["postgres-server"]
+     - Service name : `data-generator`
+     - Image : `Dockerfile`
+     - Container name : `data-generator`
+     - Command : `["postgres-server"]`
 
       
 > - Postgres Server 서비스와 Data Generator 서비스를 띄울 때 어떤 서비스가 먼저 
