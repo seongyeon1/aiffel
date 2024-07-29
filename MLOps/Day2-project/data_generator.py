@@ -1,4 +1,5 @@
 # data_generator.py
+import os
 import time
 from argparse import ArgumentParser
 
@@ -67,13 +68,28 @@ if __name__ == "__main__":
     parser.add_argument("--db-host", dest="db_host", type=str, default="localhost")
     args = parser.parse_args()
 
+    db_host = os.getenv('DB_HOST', 'localhost')
+    db_port = os.getenv('DB_PORT', '5432')
+    db_user = os.getenv('DB_USER', 'myuser')
+    db_password = os.getenv('DB_PASSWORD', 'mypassword')
+    db_name = os.getenv('DB_NAME', 'mydatabase')
+
+    # Connect to PostgreSQL database
     db_connect = psycopg2.connect(
-        user="myuser",
-        password="mypassword",
-        host=args.db_host,
-        port=5432,
-        database="mydatabase",
+        host=db_host,
+        port=db_port,
+        user=db_user,
+        password=db_password,
+        dbname=db_name
     )
+
+    # db_connect = psycopg2.connect(
+    #     user="myuser",
+    #     password="mypassword",
+    #     host=args.db_host,
+    #     port=5432,
+    #     database="mydatabase",
+    # )
     create_table(db_connect)
     df = get_data()
     generate_data(db_connect, df)

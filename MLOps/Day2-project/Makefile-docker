@@ -1,4 +1,3 @@
-#docker Makefile in docker container
 init:
 	pip install -U pip
 	pip install pandas psycopg2-binary scikit-learn
@@ -11,7 +10,4 @@ server-clean:
 	docker rmi -f day2-project-data-generator postgres:14.0
 
 db-connection:
-	PGPASSWORD=mypassword psql -h localhost -p 5432 -U myuser -d mydatabase
-
-go-container:
-	docker exec -it data-generator /bin/bash
+	PGPASSWORD=mypassword psql -h postgres-server -p 5432 -U myuser -d mydatabase

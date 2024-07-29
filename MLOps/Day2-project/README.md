@@ -34,15 +34,19 @@
 
 ### 2. Docker Compose 파일 실행
 ### 3. psql 을 이용하여 DB 에 데이터가 계속해서 쌓이고 있는지 확인
-   - Local 에서 확인
+- Local 에서 확인
     ```bash
     $ make db-connection
     mydatabase=# select * from iris_data;
     ```
    - Data Generator server 에서 확인
+     - docker makefile 따로 만들어서 make db-connection으로도 가능하게 수정완료
    ```bash
-    $ docker exec -it data-generator /bin/bash
-    root@354b29f212f6:/usr/app# PGPASSWORD=mypassword psql -h localhost -p 5432 -U myuser -d mydatabase
+    $ make go-container
+    docker exec -it data-generator /bin/bash
+    root@1b5a33743630:/usr/app# make db-connection
+    PGPASSWORD=mypassword psql -h postgres-server -p 5432 -U myuser -d mydatabase
+  
     mydatabase=# select * from iris_data;
     id |         timestamp          | sepal_length | sepal_width | petal_length | petal_width | target 
     ----+----------------------------+--------------+-------------+--------------+-------------+--------
@@ -54,6 +58,8 @@
       6 | 2024-07-29 07:35:08.579074 |          7.4 |         2.8 |          6.1 |         1.9 |      2
       7 | 2024-07-29 07:35:09.589246 |          5.6 |         2.9 |          3.6 |         1.3 |      1
     ```
+  
+
 
 ## Makefile 활용
 
@@ -65,10 +71,14 @@ $ make init
 ```bash
 $ make server
 ```
-
 ### 모든 서비스 컨테이너와 이미지를 한 번에 정지시키고 삭제
 ```bash
 $ make server-clean
+```
+
+### 컨테이너 안으로 들어가기
+```bash
+$ make go-container
 ```
 
 ### DB 연결 -> query로 db 확인
