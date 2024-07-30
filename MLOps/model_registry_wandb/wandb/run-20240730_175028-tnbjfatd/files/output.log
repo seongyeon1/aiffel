@@ -1,0 +1,4 @@
+/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/save_model_to_registry.py:26: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT * FROM iris_data ORDER BY id DESC LIMIT 100", db_connect)
+Train Accuracy : 0.9875
+Valid Accuracy : 0.9

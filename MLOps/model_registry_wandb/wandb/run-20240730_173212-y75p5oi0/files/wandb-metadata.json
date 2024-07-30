@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-07-30T08:32:13.186621",
+    "startedAt": "2024-07-30T08:32:12.291911",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/save_model_to_registry.py",
+    "codePathLocal": "save_model_to_registry.py",
+    "codePath": "MLOps/model_registry_wandb/save_model_to_registry.py",
+    "git": {
+        "remote": "https://github.com/seongyeon1/aiffel.git",
+        "commit": "0f355dbe815e285dc19194165e2f9dd17eca4776"
+    },
+    "email": "ksy974498@gmail.com",
+    "root": "/Users/seongyeon/Desktop/AI/AIFFEL",
+    "host": "gimseong-yeons-MacBook-Pro-2.local",
+    "username": "seongyeon",
+    "executable": "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3504,
+        "min": 600,
+        "max": 3504
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3504,
+            "min": 600,
+            "max": 3504
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 356.6627426147461
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 24.0
+    }
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/load_and_predict.py", line 16, in <module>
+    wandb.restore(model_path)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 4265, in restore
+    raise ValueError(f"File {name} not found in {run_path or root}.")
+ValueError: File sk_model.joblib not found in seongyeonkim/sklearn/7ocxb2nv.

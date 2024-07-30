@@ -1,0 +1,37 @@
+2024-07-30 17:42:18,917 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-07-30 17:42:18,917 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Configure stats pid to 9840
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Loading settings from /Users/seongyeon/.config/wandb/settings
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Loading settings from /Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/wandb/settings
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_init.py:_log_setup():529] Logging user logs to /Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/wandb/run-20240730_174218-j00qzfie/logs/debug.log
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/wandb/run-20240730_174218-j00qzfie/logs/debug-internal.log
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_init.py:init():569] calling init triggers
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-30 17:42:18,918 INFO    MainThread:9840 [wandb_init.py:init():619] starting backend
+2024-07-30 17:42:18,919 INFO    MainThread:9840 [wandb_init.py:init():623] setting up manager
+2024-07-30 17:42:18,921 ERROR   MainThread:9840 [wandb_init.py:init():1191] error in wandb.init()
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 624, in init
+    manager._inform_init(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/wandb_manager.py", line 213, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/service/service_sock.py", line 39, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/MLOps/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

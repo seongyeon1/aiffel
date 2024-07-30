@@ -1,0 +1,3 @@
+/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/load_and_predict.py:29: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  new_df = pd.read_sql("SELECT * FROM iris_data ORDER BY id DESC LIMIT 10", db_connect)
+Predictions for new data: [1 1 0 2 1 1 2 1 2 2]

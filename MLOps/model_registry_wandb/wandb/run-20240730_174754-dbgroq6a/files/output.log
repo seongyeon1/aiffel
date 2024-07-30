@@ -1,0 +1,4 @@
+/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/load_and_predict.py:41: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT * FROM iris_data ORDER BY id DESC LIMIT 100", db_connect)
+Train Accuracy : 1.0
+Valid Accuracy : 1.0

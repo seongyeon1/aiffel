@@ -1,0 +1,7 @@
+/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/load_and_predict.py:38: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT * FROM iris_data ORDER BY id DESC LIMIT 100", db_connect)
+Traceback (most recent call last):
+  File "/Users/seongyeon/Desktop/AI/AIFFEL/MLOps/model_registry_wandb/load_and_predict.py", line 42, in <module>
+    X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, random_state=2022)
+                                         ^^^^^^^^^^^^^^^^
+NameError: name 'train_test_split' is not defined
