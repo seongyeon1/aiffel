@@ -1,17 +1,10 @@
 #docker Makefile in docker container
 init:
 	pip install -U pip
-	pip install pandas psycopg2-binary scikit-learn
+	pip install pandas scikit-learn joblib
 
-server:
-	docker compose up -d
+dependency:
+	make -C ../Day2-project/ server
 
-server-clean:
-	docker compose down -v
-	docker rmi -f day2-project-data-generator postgres:14.0
-
-db-connection:
-	PGPASSWORD=mypassword psql -h localhost -p 5432 -U myuser -d mydatabase
-
-go-container:
-	docker exec -it data-generator /bin/bash
+dependency-clean:
+	make -C ../Day2-project/ server-clean

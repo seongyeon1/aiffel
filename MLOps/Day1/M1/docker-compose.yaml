@@ -1,4 +1,4 @@
-#compose.yaml
+#docker-compose.yaml
 services:
   api:
     build:

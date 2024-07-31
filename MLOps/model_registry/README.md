@@ -1,37 +1,55 @@
-# MlOps 실습
-- Data Generator on Docker
+# Model Registry
+- MlOps 실습
 
 ## 목표
-- 모델을 학습하고 저장하는 기본적인 파이프라인을 작성합니다.
-
-<br>
+- Docker Compose 를 이용하여 실제 서비스 환경과 비슷한 형태로 MLflow 서버를 띄워봅니다.
+- 서비스 상황을 가정하여 MLflow 의 구성 요소들을 이해합니다.
 
 ## 스펙 명세서
-### 1. 학습 및 평가 데이터 선정
-- `scikit-learn` 에서 제공하는 iris 데이터를 불러옵니다.
-- 불러온 데이터를 학습 데이터와 평가 데이터로 분리합니다. 
-- 이 때 분리된 데이터는 추후에 재현이 되어야 합니다.
+- Docker Compose 파일에 MLflow 의 운영 정보, 모델 결과 등을 저장할 물리적인 PostgreSQL DB 서버 스펙을 정의합니다.
+    - POSTGRES_USER : mlflowuser
+    - POSTGRES_PASSWORD : mlflowpassword
+    - POSTGRES_DB : mlflowdatabase
+- Docker Compose 파일에 학습된 모델을 저장할 물리적인 저장 공간인 MinIO 서버 스펙을 정의합니다.
+    - MINIO_ROOT_USER : minio
+    - MINO_ROOT_PASSWORD : miniostorage
+    - Port forwarding :
+        - api: 9000:9000
+        - console: 9001:9001
+- Docker Compose 파일에 모델과 모델의 결과들을 관리할 MLFlow 서버를 정의합니다.
+    - 환경 변수를 이용하여 MLflow 서버에서 앞서 띄워둔 PostgreSQL DB 와 MinIO 두 가지 서버에 접근이 가능하도록 연결합니다.
 
-<br>
+    - Dockerfile
+        - MLflow 에 관련된 패키지가 설치된 이미지를 생성하기 위한 Dockerfile 을 정의합니다.
+        - MinIO 에 모델 저장을 위한 초기 버켓을 생성 하기 위해 MinIO Client 도 함께 설치되도록 합니다.
+    - Docker Compose
+        - MinIO 의 접속 정보를 AWS_ACCESS_KEY_ID , AWS_SECRET_ACCESS_KEY 환경 변수를 통해 적절하게 설정합니다.
+        - MinIO Client 를 설치하고, MinIO 의 초기 버켓을 생성하도록 명령어를 작성합니다.
+        - MLflow 서버를 띄우는 명령어를 작성합니다.
+        - Port forwarding : 5001:5000
+            - MLflow 에서는 기본값으로 5000 포트를 사용합니다.
+            - 하지만 실습에서 MacOS 를 사용하는 경우 AirPlay 기능이 5000번 포트를 사용하기 때문에 중복을 피하기 위해 5001번 포트를 사용합니다.
+            - 일반적인 경우 5000번 포트를 사용하면 됩니다.
+    - 정의된 스펙에 따라 서비스들을 띄웁니다.
+        - localhost:9001 에 접속하여 MinIO 로그인 페이지가 잘 동작하는지 확인합니다.
+        - localhost:5001 에 접속하여 MLflow 페이지가 잘 동작하는지 확인합니다.
 
-### 2. 모델 개발 및 학습
-- `scikit-learn` 에서 제공하는 Standard Scaler 와 SVC를 사용합니다.
-- `1. 학습 및 평가 데이터 선정` 에서 나눈 학습 데이터를 이용하여 모델을 학습합니다.
-- 학습된 모델을 이용하여 학습 데이터와 평가 데이터의 정확도를 계산합니다.
+해당 파트의 전체 코드는 [mlops-for-mle/part3/](https://github.com/mlops-for-mle/mlops-for-mle/tree/main/part3) 에서 확인할 수 있습니다.
 
-<br>
+---
+---
+## Makefile 구성
 
-### 3. 학습된 모델 저장
-- 학습된 모델을 joblib , pickle , dill 등의 패키지를 이용해 저장합니다.
-
-<br>
-
-### 4. 저장된 모델 불러오기
-- 모델이 정상적으로 저장 되었는지 확인하기 위해 모델을 불러옵니다.
-- 불러온 모델로 학습 데이터와 평가 데이터의 정확도를 계산합니다.
-- `1. 학습 및 평가 데이터 선정` 에서 나눈 Validation 데이터를 이용하여 학습이 잘 되었는지 확인합니다.
-
-해당 파트의 전체 코드는 [mlops-for-mle/part2/](https://github.com/mlops-for-mle/mlops-for-mle/tree/main/part2) 에서 확인할 수 있습니다.
+### 현재 폴더 실행전 꼭 먼저 실행 
+- 데이터 생성
+```bash
+$ make dependency
+```
+### 현재 폴더 실행전 꼭 먼저 실행 
+- 관련 이미지 및 컨테이너 모두 삭제
+```bash
+$ make dependency
+```
 
 ### 파일 설치
 ```bash
@@ -46,12 +64,11 @@ $ make server
 $ make server-clean
 ```
 
-### 컨테이너 안으로 들어가기 (container 안에서는 이 명령어 사용불가)
+### 위에서 모든 과정(dependency, server 한 번에) 실행
 ```bash
-$ make go-container
+$ make all
 ```
-
-### DB 연결 -> query로 db 확인
+### 위에서 모든 과정(dependency, server 한 번에) 종료
 ```bash
-$ make db-connection
+$ make all-clean
 ```

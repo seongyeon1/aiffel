@@ -64,7 +64,7 @@
   
 <br>
 
-## Makefile 활용
+## Makefile 구성
 
 ### 파일 설치
 ```bash
