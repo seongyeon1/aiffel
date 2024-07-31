@@ -1,9 +1,13 @@
-# Model API
+# Model API (FastAPI, streamlit)
 - MlOps 실습
 
 ## 목표
 - Iris 데이터를 입력받아 예측값을 반환하는 API 를 작성합니다.
 - 작성한 API 에 데이터를 전달하여 제대로 작동하는지 확인합니다.
+- streamlit을 통해 예측결과를 웹에서 볼 수 있다.
+
+## 결과
+
 
 ## 스펙 명세서
 
