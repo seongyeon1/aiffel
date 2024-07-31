@@ -7,6 +7,7 @@
 - streamlit을 통해 예측결과를 웹에서 볼 수 있다.
 
 ## 결과
+![Screenshot 2024-07-31 at 5 35 37 PM](https://github.com/user-attachments/assets/88044060-b76a-4334-a924-a73da8f1d2a8)
 
 
 ## 스펙 명세서
