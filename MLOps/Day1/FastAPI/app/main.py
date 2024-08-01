@@ -1,4 +1,4 @@
-# main.py
+# textclassifier.py
 from fastapi import FastAPI
 
 app = FastAPI()

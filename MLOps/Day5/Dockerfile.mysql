@@ -1,0 +1,7 @@
+FROM mysql:8.2.0
+
+# 환경변수 설정
+ENV MYSQL_ROOT_PASSWORD=1234
+
+# 파일 복사
+COPY sentimentanalysis.sql /docker-entrypoint-initdb.d/

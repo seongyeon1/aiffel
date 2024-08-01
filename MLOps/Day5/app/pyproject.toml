@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nsmc"
+version = "0.1.0"
+description = ""
+authors = ["seongyeonkim"]
+#readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+pydantic = "^2.5.2"
+torch = "^2.0.1"
+uvicorn = "^0.24.0"
+pydantic-settings = "^2.1.0"
+kiwipiepy = "^0.18.0"
+pendulum = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

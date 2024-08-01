@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./app
+      dockerfile: ./Dockerfile.fastapi
+    container_name: fastapi_app
+    environment:
+      - PYTHONPATH=/app/src
+    volumes:
+      - ./app:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    container_name: mysql_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3305:3306"
+
+volumes:
+  db_data:
